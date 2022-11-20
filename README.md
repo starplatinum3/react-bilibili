@@ -53,6 +53,24 @@
 
 > 先运行服务端接口，见`bilibili-api`目录。本http服务默认端口: 3010
 
+
+=enter server======
+visit url: /
+======enter server======
+visit url: /index
+FetchError: request to http://localhost:3011/partitions failed, reason: connect ECONNREFUSED 127.0.0.1:3011
+    at ClientRequest.<anonymous> (/workspaces/react-bilibili/node_modules/node-fetch/lib/index.js:1393:11)
+    at ClientRequest.emit (events.js:400:28)
+    at Socket.socketErrorListener (_http_client.js:475:9)
+    at Socket.emit (events.js:400:28)
+    at emitErrorNT (internal/streams/destroy.js:106:8)
+    at emitErrorCloseNT (internal/streams/destroy.js:74:3)
+    at processTicksAndRejections (internal/process/task_queues.js:82:21) {
+  type: 'system',
+  errno: 'ECONNREFUSED',
+  code: 'ECONNREFUSED'
+}
+
 ### `npm install`
 安装项目依赖包
 
